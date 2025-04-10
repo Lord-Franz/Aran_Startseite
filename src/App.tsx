@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Header from "./components/atoms/Header.tsx";
+import Home from "./components/pages/Home.tsx";
+import ModeSwitch from "./components/molecules/ModeSwitch.tsx";
+import {useState} from "react";
+
 
 function App() {
-  const [count, setCount] = useState(0);
+
+    const [mode, setMode] = useState(false);
 
   return (
-    <Header/>
+      <>
+          <ModeSwitch
+              isOn={mode}
+              handleSwitch={() => setMode(!mode)}/>
+          <Home/>
+      </>
+
   )
 }
 
