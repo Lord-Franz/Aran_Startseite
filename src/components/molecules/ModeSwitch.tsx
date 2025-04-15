@@ -24,7 +24,7 @@ const ModeSwitch = () => {
 
 
     return (
-        <div className={"fixed right-10 top-5"}>
+        <div className={"absolute right-10 top-5"}>
             <div>
 
             </div>
