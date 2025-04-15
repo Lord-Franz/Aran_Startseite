@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-      <div className={"min-h-screen bg-white dark:bg-neutral-800"}>
+      <div>
           <ModeSwitch/>
           <Home/>
       </div>
